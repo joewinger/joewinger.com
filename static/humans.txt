@@ -1,0 +1,4 @@
+Designed & built by Joe Winger.
+Tools:
+- Gridsome
+- VS Code
