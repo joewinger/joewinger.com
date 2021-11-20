@@ -9,11 +9,13 @@ import 'aos/dist/aos.css';
 export default function (Vue, { router, head, isClient }) {
   Vue.component('Layout', DefaultLayout);
   
-  AOS.init({
-    disable: 'mobile',
-    duration: 750,
-    anchorPlacement: 'top-bottom' // This setting is not read for some reason.
-  });
+  if (isClient){
+    AOS.init({
+      disable: 'mobile',
+      duration: 750,
+      anchorPlacement: 'top-bottom' // This setting is not read for some reason.
+    });
+  }
 
   router.options.scrollBehavior = (to, from, savedPosition) => {
     if (savedPosition) return savedPosition;
