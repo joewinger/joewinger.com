@@ -11,7 +11,6 @@ export default function (Vue, { router, head, isClient }) {
   
   if (isClient){
     AOS.init({
-      disable: 'mobile',
       duration: 750,
       anchorPlacement: 'top-bottom' // This setting is not read for some reason.
     });
