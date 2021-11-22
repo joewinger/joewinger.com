@@ -9,7 +9,7 @@
       <!-- Header -->
       <header>
         <!-- <img src="@/assets/signature.png" alt="Joe Winger" height="70" > -->
-        <h1 data-aos="zoom-out" data-aos-duration="1000">Hi, I'm Joe</h1>
+        <h1 data-aos="zoom-out" data-aos-duration="1000">Hi I'm Joe&nbsp;👋</h1>
         <p data-aos="zoom-out" data-aos-delay="300" data-aos-duration="1000">
           I'm a self-taught full-stack web developer with a passion for web3 &amp; the future of the internet, searching for a company I can make an impact with.
         </p>
