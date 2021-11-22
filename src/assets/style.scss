@@ -78,12 +78,16 @@ h2 {
     left: 70%;
   }
   &:nth-of-type(2) {
-    top: 100px;
+    top: 11vh;
     left: 5%;
   }
   &:nth-of-type(3) {
     top: 105vh;
     left: 12%;
+    @media screen and (max-width: 725px) {
+      // update this at 725px because that's when we update padding for <section> tags
+      top: 100vh;
+    }
   }
   &:nth-of-type(4) {
     top: 30%;
