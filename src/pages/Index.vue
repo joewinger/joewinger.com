@@ -20,13 +20,13 @@
         <h1 data-aos="fade-right" data-aos-anchor-placement="top-bottom" class="about-title">About</h1>
         <div class="about-text">
           <p class="about-previewtext" data-aos="fade-left" data-aos-anchor=".about-title">
-            I like solving creative problems &amp; playing with new technologies. This is fake text that's meant to fill some space while I decide exactly what to write here. I intend to come back to this paragraph soon and really make it hit home. I'll add one final sentence to add a bit of length, even though there's no real content here.
+            I enjoy getting down to the fundementals &amp; understanding what makes things tick. I'm very passionate about learning, so outside of work you'll usually find me researching and tinkering with new technologies.
           </p>
           <span class="about-expand" @click="aboutExpanded=!aboutExpanded" data-aos="zoom-in" data-aos-anchor=".about-title" data-aos-delay="400">{{ aboutExpanded ? 'See Less' : 'See More' }}</span>
 
           <transition name="verticalExpand">
             <p class="about-fulltext" v-if="aboutExpanded" data-aos="fade" data-aos-anchor=".about-title">
-              My personal interests include investing (stocks, options, and crypto), reading, playing disc golf, and listening to music &amp; podcasts. My current favorite podcasts include <a href="https://www.acquired.fm/">Acquired</a>, <a href="http://podcast.banklesshq.com/">Bankless</a>, and <a href="https://lexfridman.com/podcast/">Lex Fridman Podcast</a>.
+              My personal interests include investing (stonks, options, and crypto), reading, playing disc golf, and listening to music &amp; podcasts. My current favorite podcasts include <a href="https://www.acquired.fm/">Acquired</a>, <a href="http://podcast.banklesshq.com/">Bankless</a>, and <a href="https://lexfridman.com/podcast/">Lex Fridman Podcast</a>.
             </p>
           </transition>
         </div>
