@@ -23,7 +23,10 @@
     <slot />
 
     <footer>
-      <div class="copyright">&copy; 2021 Joe Winger. Pretty much all rights reserved.</div>
+      <div class="footer-left">
+        <div>&copy; 2021 Joe Winger. Pretty much all rights reserved.</div>
+        <div>Made with code &amp; hosted on Vercel.</div>
+      </div>
       <ol class="footer-links">
         <li class="footer-link"><a href="https://github.com/joewinger/">GitHub</a></li>
       </ol>
@@ -215,14 +218,15 @@ nav {
 footer {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
-  gap: 10px;
 
-  height: 80px;
   width: 100%;
   box-sizing: border-box;
-  padding: 0 10vw;
+  padding: 35px 10vw;
+  @media screen and (max-width: 750px) {
+    padding: 35px 5vw;
+  }
 
   background-color: var(--text-color);
 
@@ -230,8 +234,11 @@ footer {
   font-weight: 500;
   color: var(--light-text-color);
 
-  @media screen and (max-width: 750px) {
-    padding: 0 5vw;
+  .footer-left {
+    margin-right: 25px;
+    div:not(:first-of-type) {
+      margin-top: 5px;
+    }
   }
 
   .footer-links {
@@ -249,6 +256,15 @@ footer {
     .footer-link a {
       color: var(--light-text-color);
       border-color: var(--light-text-color);
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    flex-direction: column-reverse;
+
+    .footer-left {
+      margin-right: 0;
+      margin-top: 25px;
     }
   }
 }
