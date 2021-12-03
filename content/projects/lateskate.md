@@ -5,7 +5,9 @@ link_text: lateskate.joewinger.com
 description: "Astronomical Products placed first at the Tecbridge Business Plan Competition and secured $10,000 in seed capital from a panel of local venture capitalists & entrepreneurs. As a Co-Founder and Software Lead, I helped spearhead a team of 5 to develop LateSkate&nbsp;— a smart safety illumination system for longboards & skateboards that can stream colors & patterns from your phone."
 tags:
 - text: startup
+  color: hsla(43, 66%, 50%, 18%)
 - text: protocol-design
+  color: hsla(18, 71%, 60%, 21%)
 published: true
 slug: lateskate
 blog_published: false
