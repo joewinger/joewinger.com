@@ -64,8 +64,8 @@
       <section id="contact">
         <h1 data-aos="fade-right" class="contact-title" data-aos-anchor-placement="top-bottom">Contact</h1>
         <p data-aos="fade-up" data-aos-delay="100" data-aos-anchor=".contact-title">Thanks for stopping by! If you want to touch base, you can reach me at <a href="mailto:contact@joewinger.com">contact@joewinger.com</a>.</p>
-        <p data-aos="fade-up" data-aos-delay="200" data-aos-anchor=".contact-title">Want to give me a job? You can forward this site to the head honcho of hiring, or download my résumé below :)</p>
-        <p data-aos="fade-up" data-aos-delay="300" data-aos-anchor=".contact-title"><a href="/resume-coming-soon.pdf" class="btn">Download&nbsp;Résumé</a></p>
+        <p data-aos="fade-up" data-aos-delay="200" data-aos-anchor=".contact-title" v-if="$settings.hireable">Want to give me a job? You can forward this site to the head honcho of hiring, or download my résumé below :)</p>
+        <p data-aos="fade-up" data-aos-delay="300" data-aos-anchor=".contact-title" v-if="$settings.hireable"><a href="/resume-coming-soon.pdf" class="btn">Download&nbsp;Résumé</a></p>
         <p data-aos="fade-up" data-aos-delay="400" data-aos-anchor=".contact-title">Also, feel free to check out my public GitHub repos <i>(including this site!)</i> at <a href="https://github.com/joewinger">github.com/joewinger</a>.</p>
       </section>
     </div>

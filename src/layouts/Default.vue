@@ -16,7 +16,7 @@
         <li class="nav-link"><a href="/#projects" @click="menuVisible = false">Projects</a></li>
         <li class="nav-link"><a href="/#skills" @click="menuVisible = false">Skills</a></li>
         <li class="nav-link"><a href="/#contact" @click="menuVisible = false">Contact</a></li>
-        <li class="nav-link"><a href="/resume-coming-soon.pdf" class="btn" @click="menuVisible = false">Download&nbsp;Résumé</a></li>
+        <li class="nav-link"><a href="/resume-coming-soon.pdf" class="btn" @click="menuVisible = false" v-if="$settings.hireable">Download&nbsp;Résumé</a></li>
       </ol>
     </nav>
 
@@ -29,6 +29,7 @@
       </div>
       <ol class="footer-links">
         <li class="footer-link"><a href="https://github.com/joewinger/">GitHub</a></li>
+        <li class="footer-link" v-if="$settings.resume_in_footer"><a href="/resume-coming-soon.pdf">Résumé</a></li>
       </ol>
     </footer>
   </div>
@@ -251,11 +252,15 @@ footer {
     margin: 0;
     list-style: none;
 
-    gap: 5px;
+    .footer-link {
+      &:not(:last-of-type) {
+        margin-right: 10px;
+      }
 
-    .footer-link a {
-      color: var(--light-text-color);
-      border-color: var(--light-text-color);
+      a {
+        color: var(--light-text-color);
+        border-color: var(--light-text-color);
+      }
     }
   }
 

@@ -8,7 +8,12 @@ import 'aos/dist/aos.css';
 
 export default function (Vue, { router, head, isClient }) {
   Vue.component('Layout', DefaultLayout);
-  
+
+  Vue.prototype.$settings = {
+    hireable: true,
+    resume_in_footer: true
+  }
+
   if (isClient){
     AOS.init({
       duration: 750,
