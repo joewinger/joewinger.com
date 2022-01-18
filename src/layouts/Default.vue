@@ -16,7 +16,7 @@
         <li class="nav-link"><a href="/#projects" @click="menuVisible = false">Projects</a></li>
         <li class="nav-link"><a href="/#skills" @click="menuVisible = false">Skills</a></li>
         <li class="nav-link"><a href="/#contact" @click="menuVisible = false">Contact</a></li>
-        <li class="nav-link"><a href="/resume-coming-soon.pdf" class="btn" @click="menuVisible = false" v-if="$settings.hireable">Download&nbsp;Résumé</a></li>
+        <li class="nav-link"><a href="/Resume%20-%20Joe%20Winger.pdf" class="btn" @click="menuVisible = false" v-if="$settings.hireable">Download&nbsp;Résumé</a></li>
       </ol>
     </nav>
 
@@ -29,7 +29,7 @@
       </div>
       <ol class="footer-links">
         <li class="footer-link"><a href="https://github.com/joewinger/">GitHub</a></li>
-        <li class="footer-link" v-if="$settings.resume_in_footer"><a href="/resume-coming-soon.pdf">Résumé</a></li>
+        <li class="footer-link" v-if="$settings.resume_in_footer"><a href="/Resume%20-%20Joe%20Winger.pdf">Résumé</a></li>
       </ol>
     </footer>
   </div>
