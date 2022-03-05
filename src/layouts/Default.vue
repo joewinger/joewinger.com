@@ -49,6 +49,18 @@ export default {
     return {
       menuVisible: false
     }
+  },
+  mounted() {
+    if (!sessionStorage.getItem("_swa") && document.referrer.indexOf(location.protocol+"//"+location.host) !== 0) {
+      const params = URLSearchParams({
+        referrer: document.referrer,
+        screen: screen.width + 'x' + screen.height,
+        user: 'joewinger',
+        utcoffset: '-5'
+      });
+      fetch('https://counter.dev/track?' + params);
+    }
+    sessionStorage.setItem('_swa', '1');
   }
 }
 </script>
